@@ -10,7 +10,7 @@ ${reset}
 }
 
 body {
-    font-family: "Medium";
+    font-family: "Pretendard-Medium";
     font-size: 18px;
     line-height: 140%;
 }
