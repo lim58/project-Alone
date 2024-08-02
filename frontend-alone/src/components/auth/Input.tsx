@@ -1,21 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { AuthLogin } from "../../constants";
-import { LoginDataType } from "../../models/auth"
+import { InputProps } from "../../models/auth"
 
-const Input = () => {
+const Input: React.FC<InputProps> = ({ data, key }) => {
     return (
         <>
-            {
-                AuthLogin.map((value: LoginDataType, index: number) => (
-                    <Container key={index}>
-                        <Icon>
-                            {value.icon}
-                        </Icon>
-                        <InputWrap placeholder={`${value.placeholder}`} />
-                    </Container>
-                ))
-            }
+            <Container key={key}>
+                <Icon>
+                    {data.icon}
+                </Icon>
+                <InputWrap name={data.name} placeholder={data.placeholder} />
+            </Container>
         </>
     )
 }

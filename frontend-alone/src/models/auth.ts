@@ -6,8 +6,13 @@ type AuthBaseType = {
     password: string
 }
 
-export interface LoginDataType {
+export interface AuthDataType {
     name: string
     placeholder: string
     icon: ReactElement
+}
+
+export interface InputProps {
+    data: AuthDataType
+    key: number
 }
