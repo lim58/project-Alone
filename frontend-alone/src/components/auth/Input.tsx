@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { UserNameIcon, UserIdIcon, UserPwIcon } from "../../assets/auth";
+import { AuthLogin } from "../../constants";
+import { LoginDataType } from "../../models/auth"
 
 const Input = () => {
     return (
-        <Container>
-            <Icon>
-                <UserNameIcon />
-            </Icon>
-            <InputWrap placeholder="아이디를 입력해주세요" />
-        </Container>
+        <>
+            {
+                AuthLogin.map((value: LoginDataType, index: number) => (
+                    <Container key={index}>
+                        <Icon>
+                            {value.icon}
+                        </Icon>
+                        <InputWrap placeholder={`${value.placeholder}`} />
+                    </Container>
+                ))
+            }
+        </>
     )
 }
 
