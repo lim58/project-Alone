@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = () => {
+interface ButtonProps {
+    text : string
+}
+
+const Button = ({text} : ButtonProps) => {
     return (
         <Container>
-            Login
+            {text}
         </Container>
     )
 }

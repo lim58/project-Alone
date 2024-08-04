@@ -22,7 +22,7 @@ const Login = () => {
                     } 
                 </S.InputWrap>
                 <S.LinkWrap>
-                    <Button/>
+                    <Button text="Login"/>
                     <S.LinkText>회원가입 하러가기</S.LinkText>
                 </S.LinkWrap>
             </S.Content>
