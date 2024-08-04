@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { loginInputAtom } from "../../assets/atom/authAtom";
 
-
 const Login = () => {
 
     const navigation = useNavigate()

@@ -4,8 +4,15 @@ import { Logo } from "../../assets/index"
 import Input from "../../components/auth/Input"
 import Button from "../../components/auth/Button"
 import { AuthSignUp } from "../../constants";
+import { useRecoilValue } from "recoil";
+import { signUpInputAtom } from "../../assets/atom/authAtom";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+
+    const navigation = useNavigate()
+    const inputData = useRecoilValue(signUpInputAtom)
+
     return (
 
         <S.Container>

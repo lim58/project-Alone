@@ -7,3 +7,13 @@ export const loginInputAtom = atom({
         password: ""
     }
 })
+
+export const signUpInputAtom = atom({
+    key: "signUpInputData",
+    default: {
+        name: "",
+        userId: "",
+        password: "",
+        passwordCheck: ""
+    }
+})
