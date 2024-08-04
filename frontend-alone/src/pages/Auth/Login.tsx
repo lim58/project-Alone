@@ -10,7 +10,7 @@ import { loginInputAtom } from "../../assets/atom/authAtom";
 
 const Login = () => {
 
-    const navigation = useNavigate()
+    const navigate = useNavigate()
     const inputData = useRecoilValue(loginInputAtom)
 
     return (
@@ -30,7 +30,7 @@ const Login = () => {
                 </S.InputWrap>
                 <S.LinkWrap>
                     <Button text="Login"/>
-                    <S.LinkText>회원가입 하러가기</S.LinkText>
+                    <S.LinkText onClick={() => navigate("/signUp")}>회원가입 하러가기</S.LinkText>
                 </S.LinkWrap>
             </S.Content>
         </S.Container>

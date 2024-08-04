@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
 
-    const navigation = useNavigate()
+    const navigate = useNavigate()
     const inputData = useRecoilValue(signUpInputAtom)
 
     return (
@@ -30,7 +30,7 @@ const SignUp = () => {
                 </S.InputWrap>
                 <S.LinkWrap>
                     <Button text="SignUp"/>
-                    <S.LinkText>로그인 하러가기</S.LinkText>
+                    <S.LinkText onClick={() => navigate("/login")}>로그인 하러가기</S.LinkText>
                 </S.LinkWrap>
             </S.Content>
         </S.Container>
