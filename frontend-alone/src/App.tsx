@@ -1,8 +1,12 @@
 import React from 'react';
+import Router from './router/Router';
+import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue } from 'recoil';
 
 function App() {
   return (
-    <div>dd</div>
+    <RecoilRoot>
+      <Router />
+    </RecoilRoot>
   );
 }
 
