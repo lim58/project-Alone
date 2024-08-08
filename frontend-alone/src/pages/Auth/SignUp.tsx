@@ -1,11 +1,11 @@
 import React from "react";
 import * as S from "../../components/auth/style"
-import { Logo } from "../../assets/index"
+import { Logo } from "../../assets/common/index"
 import Input from "../../components/auth/Input"
 import Button from "../../components/auth/Button"
 import { AuthSignUp } from "../../constants";
 import { useRecoilValue } from "recoil";
-import { signUpInputAtom } from "../../assets/atom/authAtom";
+import { signUpInputAtom } from "../../atom/authAtom";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
