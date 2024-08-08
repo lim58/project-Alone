@@ -58,7 +58,7 @@ display: flex;
 gap: 15px;
 `
 
-const LinkText = styled.p<{ selected: boolean }>`
+const LinkText = styled.p<{ selected: boolean}>`
 font-family: "Pretendard-Regular";
 font-size: 18px;
 color: ${({ selected }) => (selected ? "#2661BB" : "#A0A0A0")};
