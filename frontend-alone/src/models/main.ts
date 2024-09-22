@@ -3,3 +3,9 @@ export interface HeaderDataType {
     id: string
     text: string
 }
+
+export interface FooterDataType {
+    name: string
+    subTitle: string
+    text: string
+}
